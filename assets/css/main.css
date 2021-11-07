@@ -1,0 +1,397 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth!important;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.pull-right {
+    float: right;
+}
+
+
+#wrapper {
+}
+
+/* header */
+
+#header {
+    position: fixed;
+    height: 46px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #000;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    padding: 0 24px;
+}
+
+#nav li a {
+    color: #fff;
+    font-size: 15px;
+    line-height: 46px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+}
+
+.btn:hover,
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .themify-icon {
+    font-size: 12px;
+}
+
+/* sub navigation */
+
+#nav .subnav {
+    width: 160px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%); ;
+    display:none;   
+}
+
+#nav .subnav a {
+    color: #000;
+    font-size: 15px;
+    line-height: 38px;
+    padding: 0 16px;
+    text-transform: capitalize;
+    display: block;
+}
+
+#nav .subnav li {
+    list-style-type: none;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+/* end sub navigation */
+
+.menu-bar,
+.btn-search-icon {
+    float: right;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+#header .menu-bar:hover .ti-menu {
+    background-color: #ccc;
+    color: #000;
+}
+
+.menu-bar .ti-menu,
+.btn-search-icon .themify-icon {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 24px;
+    line-height: 46px;
+    display: inline-block;
+}
+
+.btn-search-icon:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+/* end: header */
+
+/* slider */
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    font-weight: bolder;
+}  
+
+
+/* end: slider */
+
+/* content */
+
+#content {
+
+}
+
+#content .section-content {
+    width: 800px;
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 64px 16px 112px;
+}
+
+#content .section-heading {
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+#content .section-description {
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+#content .section-about {
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+#content .member-list {
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+
+#content .name-member {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#content .member-img {
+    width: 154px;
+    border-radius: 4px;
+}
+
+/* tour section */
+.tour-section {
+    background-color: #000;
+}
+
+.tour-section .ticket-list {
+    background-color: #fff;
+}
+
+.tour-section li {
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border: 1px solid #ddd;
+    list-style-type: none;
+}
+
+.tour-section .sold-out {
+    color: #fff;
+    background-color: #f44336;
+    padding: 2px 7px;
+    margin-left: 16px;
+}
+
+.tour-section .quantity {
+    float: right;
+    color: #fff;
+    background-color: #000;
+    width: 24px;
+    height: 22px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    margin-top: -2px;
+    margin-right: 18px;
+}
+
+/* tour places */
+
+.tour-section .place-list {
+    margin-top: 16px;
+}
+
+
+.tour-section .places-img {
+    width: 100%;
+    display: block;
+}
+
+.tour-section .places-img:hover {
+    opacity: 0.6;
+}
+
+.tour-section .places-body {
+    font-size: 15px;
+    padding: 16px;
+    background-color: white;
+}
+
+.tour-section .places-heading {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tour-section .places-time {
+    color: #757575;
+    margin-top: 15px;
+}
+
+.tour-section .places-about {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 11px 15px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+/* end: Tour places */
+
+/* contact from */
+.contact-infor {
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.contact-infor i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+    text-align: left;
+}
+
+.contact-form .form-control {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* map */
+.map-section img {
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .socials-icon {
+    font-size: 28px;
+    padding: 0 8px;
+}
+
+#footer .socials-list a {
+    color:rgb(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .socials-list a:hover {
+    opacity: 0.4;
+    cursor: pointer;
+} 
+
+#footer .copyright {
+    font-size: 15px;
+    margin-top: 15px;
+    color:rgb(0, 0, 0, 0.6);
+}
