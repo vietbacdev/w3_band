@@ -1,0 +1,60 @@
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .fz-20 {
+        font-size: 20px;
+    }
+
+    #content {
+        width: 768px;
+    }
+
+    #menu .mobile-text-content {
+        width: 100%;
+    }
+
+    #about .note-tradition {
+        display: none;
+    }
+
+    .note-tradition {
+        font-size: 18px !important;
+    }
+
+    #content img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 740px) {
+    p {
+        font-size: 15px;
+    }
+
+    #poster .slogan {
+        display: none;
+    }
+    
+    #poster {
+        margin-top: 54px;
+    }
+
+    .nav .menu-item,
+    #content .mobile-img {
+        display: none;
+        overflow: hidden;
+    }
+
+    #content {
+        width: 414px;
+    }
+
+    .mobile-text-content {
+        width: 100%;
+        display: inline-block;
+        padding: 0 16px;
+}
+
+}

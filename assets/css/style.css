@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.clear {
+    /* clear: both; */
+    overflow: hidden;
+}
+
+.align {
+    text-align: center !important;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+.row {
+    padding: 64px 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col {
+    padding: 12px 24px;
+}
+
+.col-half {
+    width: 50%;
+    display: inline-block;
+}
+
+.col-left {
+    float: left;
+}
+
+.col-right {
+    float: right:
+}
+
+.fz-18 {
+    font-size: 18px;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.mbt-18 {
+    margin: 18px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.lt-5 {
+    letter-spacing: 5px;
+}
+
+
+#wrapper {
+
+}
+
+#header {
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    height: 54px;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.nav {
+    padding: 8px 16px;
+}
+
+.nav a {
+    color: #000;
+    padding: 11px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 4px;
+    display: inline-block;
+}
+
+.nav a:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.nav .menu-intro {
+    float: right;
+    
+}
+
+#poster {
+    margin-top: 20px;
+    position: relative;
+    padding-top: 50%;
+    background: url('../img/poster/poster1.jpg') top center / cover no-repeat;
+}
+
+#poster .slogan {
+    padding: 12px 24px;
+    position: absolute;
+    bottom: 0;
+}
+
+#poster .slogan .text-intro {
+    font-size: 36px;
+    letter-spacing: 5px;
+    margin: 10px 0;
+    height: 54px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+}
+
+#content  img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.75;
+    border-radius: 4px;
+}
+
+#content .about-section {
+    width: 50%;
+    float: right;
+    padding: 12px 24px;
+}
+
+#content .text-heading {
+    font-size: 36px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 5px;
+}
+
+#content .season {
+    background-color: #f1f1f1;
+    padding: 3px 8px;
+}
+
+#content .note-tradition {
+    font-size: 15px;
+    color: #757575;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* menu food */
+
+#content .contact-infor {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+#content .contact-address {
+    color: #607d8b;
+    font-size: 18px;
+    margin: 18px 0;
+    font-weight: bolder;
+}
+
+#content .form-contact {
+    display: block;
+    width: 100%;
+    padding: 24px 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+#content .contact-btn {
+    border: none;
+    padding: 12px 19px;
+    margin-top: 32px;
+}
+
+#content .contact-btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#footer {
+    background-color: #f1f1f1;
+}
+
+.copyright {
+    width: 100%;
+    padding: 48px;
+    font-size: 15px;
+}
